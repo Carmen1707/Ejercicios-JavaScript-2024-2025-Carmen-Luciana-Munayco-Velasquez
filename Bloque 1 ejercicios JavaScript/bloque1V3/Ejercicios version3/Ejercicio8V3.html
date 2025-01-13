@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Promedio(repreg) 
+    { 
+        if (repreg<=4)
+        {
+           return "<br>Reprobado";
+        }
+        else
+        {
+            return "<br>Regular";
+        }
+
+    }
+        nota1=parseInt(prompt("Introducir la primera nota del alumno: "));
+        nota2=parseInt(prompt("Introducir la segunda nota del alumno: "));
+        nota3=parseInt(prompt("Introducir la tercera nota del alumno: "));
+        let totaldenotas=nota1+nota2+nota3
+        let promedio=totaldenotas/3
+    
+    let resultado=Promedio(promedio);
+    document.write(resultado);
+
+    </script>
+</body>
+</html>

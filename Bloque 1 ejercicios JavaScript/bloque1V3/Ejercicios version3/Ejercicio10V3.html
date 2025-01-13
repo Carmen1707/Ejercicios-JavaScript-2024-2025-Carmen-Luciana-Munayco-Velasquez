@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numerodigitos(nd)/*nd=numero digitos*/
+        {
+            if (nd<10) 
+            {
+                return "El número tiene 1 dígito";
+            }
+            else 
+            {
+                return "El número tiene 2 dígitos";
+            }
+        }
+        numero=parseInt(prompt("Introduce un número de uno o dos dígitos (entre 1 y 99):"));
+        let resultado=numerodigitos(numero);
+        document.write(resultado);
+    </script>
+</body>
+</html>

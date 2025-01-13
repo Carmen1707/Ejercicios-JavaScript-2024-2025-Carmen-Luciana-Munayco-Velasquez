@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function ca1(n1 ,n2)
+        {
+            calculo1=n1+n2;
+            calculo2=n1-n2;
+            return "El primer número es mayor al segundo. La suma de los número es "+calculo1+" y la resta es "+calculo2+".";
+        }
+        function ca2(n1, n2) 
+        {
+            calculo1=n1*n2;
+            calculo2=n2/n1;
+            return "El primer número es menor al segundo. La multiplicación de los número es "+calculo1+" y la división es "+calculo2+".";
+        }
+                numero1 = parseInt(prompt("Introduzca el primer número"));
+                numero2 = parseInt(prompt("Introduzca el segundo número"));
+                if (numero1>numero2)
+                    {
+                        let resultado=ca1(numero1, numero2);
+                        document.write(resultado);
+                    }
+                    else
+                    {
+                        let resultado=ca2(numero1, numero2);
+                        document.write(resultado);
+                    }
+
+    </script>
+</body>
+</html>

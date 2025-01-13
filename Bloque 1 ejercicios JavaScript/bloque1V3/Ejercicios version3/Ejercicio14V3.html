@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculadora(sue ,ant) 
+    {
+        if (sue<500 && ant>=10)    
+        { 
+            /*Aumento del 20% si el sueldo es inferior a 500 y la antigüedad es de 10 años o más*/
+            sue=sue*1.20;
+             return "Tu sueldo con aumento del 20%:"+sue;
+        } 
+        else 
+        if (sue<500 && ant<10) 
+        {
+            /*Aumento del 5% si el sueldo es inferior a 500 y la antigüedad es menor a 10 años*/
+            sue=sue*1.05; // Aumento del 5%
+            return "Tu sueldo con aumento del 5%:" +sue;
+        } 
+        else 
+        {
+            /*Sueldo igual o mayor a 500*/
+             return "Tu sueldo sin cambios:" +sue;
+        }
+    }
+        sueldo=parseInt(prompt("Introduce el sueldo del operario:"));
+        antiguedad=parseInt(prompt("Introduce los años de antigüedad del operario:"));
+        
+    let resultado=calculadora(sueldo ,antiguedad);
+    document.write(resultado);
+
+    </script>
+    
+</body>
+</html>

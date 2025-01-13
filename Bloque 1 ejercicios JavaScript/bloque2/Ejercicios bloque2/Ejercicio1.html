@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra;
+
+        palabra=prompt("Introduzca una de estas palabras: Gato, Perro, Mesa, Casa");
+        
+        while (palabra!='Gato' && palabra!='Perro' && palabra!='Mesa' && palabra!='Casa') 
+        {
+        palabra=prompt("Introduzca una de estas palabras : Gato, Perro, Mesa, Casa");
+        }
+        switch (palabra) 
+        {
+            case 'Gato':
+            document.write('La traducción es: Cat');
+            break
+            case 'Perro':
+            document.write('La traducción es: Dog');
+            break
+            case 'Mesa':
+            document.write('La traducción es: Table');
+            break
+            case 'Casa':
+            document.write('La traducción es: House');
+            break
+        }
+    </script>
+</body>
+</html>

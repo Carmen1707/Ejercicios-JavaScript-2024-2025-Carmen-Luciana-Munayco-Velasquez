@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valor1;
+        let valor2;
+        let valor3;
+        let valor4;
+        valor1=prompt('Ingrese primer número:');
+        valor2=prompt('Ingrese segundo número');
+        valor3=prompt("Introducir el tercer valor: ");
+        valor4=prompt("Introducir el cuarto valor: "); 
+        
+    function mostrarsuma(mas)
+    {
+        return "La suma es:" +mas
+    }
+        let suma=parseInt(valor1)+parseInt(valor2)+parseInt(valor3)+parseInt(valor4);
+    
+    let resultado1=mostrarsuma(suma);
+    document.write(resultado1)
+
+    function mostrarproducto(por)
+    {
+        return "El producto es:" +por
+    }
+        let producto=valor1*valor2*valor3*valor4;
+    
+    let resultado2=mostrarproducto(producto);
+    document.write("<br>")
+    document.write(resultado2)
+    </script>
+    
+</body>
+</html>

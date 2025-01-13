@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+        function digitos2(nu2) 
+    {
+        if (nu2>=1 && nu2<=999) 
+        {
+            if (nu2<10) 
+            {
+                return "<br>El número tiene 1 dígito";
+            } 
+            else
+            if (nu2<100) 
+            {
+                return "<br>El número tiene 2 dígitos";
+            } 
+            else 
+            {
+                return "<br>El número tiene 3 dígitos";
+            }
+        } 
+    }
+        numero=parseInt(prompt("Introduce un número entero positivo de hasta tres cifras:"));
+         
+    let resultado=digitos2(numero);
+    document.write(resultado);
+ 
+    </script>
+    
+</body>
+</html>

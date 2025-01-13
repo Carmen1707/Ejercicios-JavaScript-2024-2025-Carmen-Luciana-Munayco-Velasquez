@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function totaldecompra()
+        {
+        let precio;
+        let cantidad;
+        alert("Ingresar un precio sin decimales, es decir ingresar un precio entero(1,6,3...90.etc)");
+        cantidad=parseInt((prompt("Introduzca la cantidad de artículos que llevas:")));
+        precio=parseInt((prompt("Introduzca el precio del producto:")));
+        let total=precio*cantidad;
+        return "Los "+cantidad+" productos con valor de "+precio+"€ cada uno, es en total de "+total+"€.";
+        }
+        let resultado=totaldecompra();
+        document.write(resultado);
+    </script>
+</body>
+</html>

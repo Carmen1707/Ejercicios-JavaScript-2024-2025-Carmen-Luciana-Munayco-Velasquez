@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function igualono(va1 ,va2 ,va3 ) 
+    {
+        if(va1==va2 && va2==va3)
+        {
+            let suma=va1+va2;
+            let resultado1=suma*va3;
+            return "El resultado de su suma y multiplicacion es " +resultado1; 
+        }
+        else
+        {
+            return"<br>Los tres valores no son iguales";
+        
+        }
+
+    }
+        valor1=parseInt(prompt("Introduce el primer valor:"));
+        valor2=parseInt(prompt("Introduce el segundo valor:"));
+        valor3=parseInt(prompt("Introduce el tercer valor:"));
+
+    let resultado=igualono(valor1 ,valor2 ,valor3);
+    document.write(resultado);
+
+    </script>
+    
+</body>
+</html>
